@@ -1,0 +1,12 @@
+---
+- name: Yum Module Playbook
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Yum Module Example Using Git or maven
+      yum: 
+        name: git
+        state: present
+...
+#This Module will install git 
