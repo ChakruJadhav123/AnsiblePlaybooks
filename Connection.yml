@@ -1,0 +1,9 @@
+---
+- name: Connection For Server Playbook
+  hosts: all
+  become: yes
+  
+  tasks:
+    - name: Connection Check Using Ping Module
+      ping:
+...
